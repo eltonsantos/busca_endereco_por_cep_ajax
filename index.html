@@ -6,7 +6,15 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<style type="text/css">
-		#loader {background: url('loader.gif');}
+		#loader {	
+			height: 30px;
+			width: 30px;
+		}
+		#wait {
+			background: url('loader.gif');
+			padding: 0px 8px 0px 8px;
+			display: none;
+		}
 	</style>
 </head>
 <body>
@@ -15,21 +23,23 @@
 	<input type="text" maxlength="8" value="" id="cep" name="cep" />
 	<!--<input type="button" id="consultar" value="Pesquisar" />-->
 	<br />
-	<p id="loader"></p>
+	<p id="loader">
+		<span id="wait"></span>
+	</p>
 	Rua:<br />
-	<input type="text" readonly="readonly" id="logradouro" />
+	<input type="text" readonly="readonly" id="logradouro" value="" name="logradouro" />
 	<br />
 	Número:<br />
-	<input type="text" id="numero" />
+	<input type="text" id="numero" name="numero" />
 	<br />
 	Bairro:<br />
-	<input type="text" readonly="readonly" id="bairro" />
+	<input type="text" readonly="readonly" id="bairro" value="" name="bairro" />
 	<br />
 	Cidade:<br />
-	<input type="text" readonly="readonly" id="cidade" />
+	<input type="text" readonly="readonly" id="cidade" value="" name="cidade" />
 	<br />
 	Estado:<br />
-	<input type="text" readonly="readonly" id="estado" />
+	<input type="text" readonly="readonly" id="estado" value="" name="estado" />
 
 </body>
 </html>
