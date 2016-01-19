@@ -3,13 +3,13 @@
 */
 $(document).ready( function() {
    /* Executa a requisição quando o campo CEP perder o foco */
-   $('#consultar').click(function(){
+   $('#cep').blur(function(){
        /* Configura a requisição AJAX */
        $.ajax({
             url : "http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+cep, /* URL que será chamada */ 
             contentType: 'application/json',
             type : 'POST', /* Tipo da requisição */ 
-            data: 'cep=' + $('#cep').val(), /* dado que será enviado via GET */
+            data: 'cep=' + $('#cep').val(), /* dado que será enviado via POST */
             dataType: 'jsonp', /* Tipo de transmissão */
             success: function(data){
                 if(data.sucesso == 1){
