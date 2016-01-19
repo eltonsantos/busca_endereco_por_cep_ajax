@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Localização de endereço através do CEP usando jQuery</title>
+	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		#loader {background: url('loader.gif');}
+	</style>
+</head>
+<body>
+
+	CEP:
+	<input type="text" maxlength="8" value="" id="cep" name="cep" />
+	<input type="button" id="consultar" value="Pesquisar" />
+	<br />
+	<p id="loader"></p>
+	Rua:<br />
+	<input type="text" readonly="readonly" id="logradouro" />
+	<br />
+	Número:<br />
+	<input type="text" id="numero" />
+	<br />
+	Bairro:<br />
+	<input type="text" readonly="readonly" id="bairro" />
+	<br />
+	Cidade:<br />
+	<input type="text" readonly="readonly" id="cidade" />
+	<br />
+	Estado:<br />
+	<input type="text" readonly="readonly" id="estado" />
+
+</body>
+</html>
